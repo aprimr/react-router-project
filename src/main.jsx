@@ -3,6 +3,7 @@ import Home from './Components/Home/home'
 import About from './Components/About/about'
 import Blog from './Components/Blog/blog'
 import Contact from './Components/Contact/contact'
+import Users from './Components/Users/users'
 import ReactDOM from 'react-dom/client';
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "Contact",
         element: <Contact />,
+      },
+      {
+        path: "Users/:userid",
+        element: <Users />,
       }
     ]
   }
